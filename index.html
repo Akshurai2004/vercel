@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Move4AS: Adaptive Multimodal Routing and Low-Rank Bilinear Fusion for Energy-Efficient Autism Screening</title>
-  
+  <title>LUMEN &mdash; Lightweight Unified Multimodal Energy-aware Neural Network</title>
+
   <!-- Academic / Editorial Typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +14,7 @@
     :root {
       /* Single uniform background across entire page */
       --bg: #F7F4EE;
-      
+
       /* Pure editorial typography */
       --text: #2C2825;
       --text-muted: #6B635B;
@@ -56,7 +56,7 @@
 
     /* Container */
     .container {
-      max-width: 900px;
+      max-width: 940px;
       margin: 0 auto;
       padding: 0 24px;
     }
@@ -128,7 +128,7 @@
       text-underline-offset: 3px;
     }
 
-    /* Tone Switcher - Just text */
+    /* Tone Switcher */
     .theme-switch {
       display: inline-flex;
       align-items: center;
@@ -185,7 +185,7 @@
 
     h1 {
       font-family: 'Source Serif 4', Georgia, serif;
-      font-size: clamp(2.0rem, 3.8vw, 2.85rem);
+      font-size: clamp(2.0rem, 3.8vw, 2.8rem);
       font-weight: 700;
       line-height: 1.25;
       color: var(--heading);
@@ -195,7 +195,7 @@
 
     .hero-lead {
       font-family: 'Source Serif 4', Georgia, serif;
-      font-size: 1.25rem;
+      font-size: 1.22rem;
       line-height: 1.65;
       color: var(--text);
       margin-bottom: 24px;
@@ -216,7 +216,7 @@
       color: var(--heading);
     }
 
-    /* Key Numbers Row - Pure Text, No Boxes */
+    /* Key Numbers Row */
     .stat-row {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -242,7 +242,7 @@
     }
 
     .stat-num {
-      font-size: 2.25rem;
+      font-size: 2.2rem;
       font-weight: 700;
       line-height: 1.1;
       margin-bottom: 6px;
@@ -262,7 +262,7 @@
     }
 
     h2 {
-      font-size: 1.75rem;
+      font-size: 1.72rem;
       font-weight: 700;
       color: var(--heading);
       margin: 52px 0 18px;
@@ -272,10 +272,10 @@
     }
 
     h3 {
-      font-size: 1.28rem;
+      font-size: 1.25rem;
       font-weight: 600;
       color: var(--heading);
-      margin: 34px 0 14px;
+      margin: 36px 0 14px;
       letter-spacing: -0.01em;
     }
 
@@ -318,23 +318,13 @@
       color: var(--accent-hover);
     }
 
-    /* Explanatory Callouts - Pure Text, No Box */
+    /* Explanatory Callouts */
     .concept-box {
       background: transparent;
       border: none;
       border-left: 2px solid var(--border-dark);
       padding: 6px 0 6px 18px;
       margin: 26px 0;
-    }
-
-    .concept-box.phase,
-    .concept-box.warning,
-    .concept-box.success {
-      background: transparent;
-      border-top: none;
-      border-right: none;
-      border-bottom: none;
-      border-left: 2px solid var(--border-dark);
     }
 
     .box-title {
@@ -348,17 +338,17 @@
       margin-bottom: 0;
     }
 
-    /* Figure Display - Pure Image & Caption, No Box Container */
+    /* Figure Display */
     .figure-block {
       background: transparent;
       border: none;
       padding: 0;
-      margin: 44px 0;
+      margin: 36px 0 44px;
       text-align: left;
     }
 
     .figure-img-wrap {
-      background: transparent;
+      background: #FFFFFF;
       border: 1px solid var(--border);
       overflow: hidden;
       cursor: zoom-in;
@@ -368,10 +358,6 @@
       width: 100%;
       height: auto;
       display: block;
-    }
-
-    .zoom-badge {
-      display: none;
     }
 
     .figure-caption {
@@ -411,14 +397,15 @@
     #modal-img {
       max-width: 96%;
       max-height: 92vh;
+      background: #FFFFFF;
       border: 1px solid var(--border);
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
     }
 
-    /* Clean Scientific Tables - Booktabs Style, No Enclosing Box */
+    /* Scientific Tables - Booktabs Style */
     .table-container {
       overflow-x: auto;
-      margin: 32px 0;
+      margin: 28px 0 34px;
       background: transparent;
       border: none;
     }
@@ -426,7 +413,7 @@
     table {
       width: 100%;
       border-collapse: collapse;
-      font-size: 0.92rem;
+      font-size: 0.88rem;
       text-align: left;
       background: transparent;
       border-top: 2px solid var(--heading);
@@ -435,7 +422,7 @@
 
     th {
       background: transparent;
-      padding: 12px 14px;
+      padding: 11px 12px;
       color: var(--heading);
       font-weight: 700;
       border-bottom: 1px solid var(--heading);
@@ -443,7 +430,7 @@
     }
 
     td {
-      padding: 11px 14px;
+      padding: 10px 12px;
       border-bottom: 1px solid var(--border);
       color: var(--text);
       background: transparent;
@@ -466,13 +453,10 @@
 
     .tag-top {
       display: inline;
-      background: transparent;
-      border: none;
       color: var(--accent);
-      font-size: 0.78rem;
+      font-size: 0.76rem;
       font-weight: 600;
-      padding: 0;
-      margin-left: 6px;
+      margin-left: 5px;
     }
 
     .tag-top::before {
@@ -483,7 +467,7 @@
       content: "]";
     }
 
-    /* Math & Code Blocks - Clean Indented Text, No Dark Box */
+    /* Math & Code Blocks */
     .formula-card {
       background: transparent;
       border: none;
@@ -491,7 +475,7 @@
       padding: 8px 0 8px 18px;
       margin: 22px 0;
       font-family: 'Fira Code', monospace;
-      font-size: 0.9rem;
+      font-size: 0.88rem;
       color: var(--heading);
       overflow-x: auto;
       line-height: 1.7;
@@ -500,12 +484,12 @@
 
     code {
       font-family: 'Fira Code', monospace;
-      font-size: 0.9em;
+      font-size: 0.88em;
       color: var(--heading);
       background: transparent;
     }
 
-    /* Footer - Seamless with page */
+    /* Footer */
     footer {
       border-top: 1px solid var(--border);
       padding: 48px 0 40px;
@@ -532,6 +516,164 @@
       color: var(--heading);
       text-decoration: underline;
     }
+
+    /* ===== LUMEN: Clean Animations & Polish ===== */
+    html { scroll-behavior: smooth; }
+    section { scroll-margin-top: 80px; }
+
+    #progress-bar { background: linear-gradient(90deg, var(--accent), #D2691E); height: 3px; }
+
+    header { backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
+
+    .brand-mark {
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      background: linear-gradient(90deg, var(--accent), #D2691E);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    nav a { position: relative; }
+    nav a::after {
+      content: "";
+      position: absolute;
+      left: 0; bottom: -4px;
+      width: 100%; height: 2px;
+      background: var(--accent);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.25s ease;
+    }
+    nav a:hover { text-decoration: none; }
+    nav a:hover::after { transform: scaleX(1); }
+
+    .title-gradient {
+      display: block;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: clamp(3.2rem, 8vw, 5.2rem);
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      line-height: 1.05;
+      background: linear-gradient(90deg, var(--accent), #D2691E, #B8860B, var(--accent));
+      background-size: 300% 100%;
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      animation: shimmer 8s ease-in-out infinite;
+    }
+
+    .title-sub {
+      display: block;
+      margin-top: 10px;
+      font-size: clamp(1.3rem, 2.6vw, 1.8rem);
+      font-weight: 600;
+      color: var(--heading);
+    }
+
+    .hero-tagline {
+      color: var(--text-muted);
+      font-size: 1.02rem;
+      margin-top: -8px;
+    }
+
+    @keyframes shimmer {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(18px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .hero > * { opacity: 0; animation: fadeUp 0.7s ease-out forwards; }
+    .hero > *:nth-child(1) { animation-delay: 0.05s; }
+    .hero > *:nth-child(2) { animation-delay: 0.15s; }
+    .hero > *:nth-child(3) { animation-delay: 0.3s; }
+    .hero > *:nth-child(4) { animation-delay: 0.45s; }
+    .hero > *:nth-child(5) { animation-delay: 0.6s; }
+
+    /* Scroll reveal (enabled by JS only) */
+    .js .reveal { opacity: 0; transform: translateY(22px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .js .reveal.visible { opacity: 1; transform: none; }
+    .js .stat-box.reveal.visible:hover { transform: translateY(-4px); }
+    .js .author-card.reveal.visible:hover,
+    .js .mentor-card.reveal.visible:hover { transform: translateY(-5px); }
+
+    .stat-box {
+      padding: 14px;
+      border-radius: 12px;
+      transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+    }
+    .stat-box:hover {
+      transform: translateY(-4px);
+      background: rgba(255, 255, 255, 0.6);
+      box-shadow: 0 8px 24px rgba(139, 69, 19, 0.08);
+    }
+    .stat-num { color: var(--accent); }
+
+    .figure-img-wrap { border-radius: 10px; overflow: hidden; }
+    .figure-img-wrap img { transition: transform 0.4s ease; }
+    .figure-img-wrap:hover img { transform: scale(1.02); }
+
+    .table-container { border-radius: 8px; }
+    td { transition: background 0.2s ease; }
+
+    #image-modal.active { animation: fadeIn 0.25s ease; }
+    #image-modal.active #modal-img { animation: zoomIn 0.3s ease; }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes zoomIn { from { transform: scale(0.94); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+
+    /* Authors */
+    .author-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 18px;
+      margin: 24px 0;
+    }
+    .author-card, .mentor-card {
+      background: rgba(255, 255, 255, 0.55);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 22px 18px;
+      text-align: center;
+      transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    }
+    .author-card:hover, .mentor-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--border-dark);
+      box-shadow: 0 10px 28px rgba(139, 69, 19, 0.10);
+    }
+    .author-avatar {
+      width: 56px; height: 56px;
+      margin: 0 auto 12px;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 700;
+      color: #fff;
+      background: linear-gradient(135deg, var(--accent), #D2691E);
+    }
+    .author-avatar.mentor { margin: 0; flex-shrink: 0; background: linear-gradient(135deg, #5C2D0C, #B8860B); }
+    .author-name { font-weight: 700; color: var(--heading); }
+    .author-mail { font-size: 0.82rem; color: var(--text-muted); text-decoration: none; word-break: break-all; }
+    .author-mail:hover { color: var(--accent); text-decoration: underline; }
+    .mentor-card {
+      display: flex; align-items: center; gap: 18px;
+      text-align: left;
+      max-width: 460px;
+      margin: 8px auto 0;
+    }
+    .mentor-label {
+      font-size: 0.75rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.1em;
+      color: var(--accent);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation: none !important; transition: none !important; }
+      .hero > *, .js .reveal { opacity: 1 !important; transform: none !important; }
+    }
   </style>
 </head>
 <body>
@@ -543,17 +685,18 @@
   <header>
     <div class="container header-inner">
       <a href="#" class="brand-link">
-        Move4AS Research
-        <span class="badge-sub">Scientific Specification</span>
+        <span class="brand-mark">LUMEN</span>
+        <span class="badge-sub">Capstone Phase-3 Benchmark</span>
       </a>
       <div class="nav-wrapper">
         <nav>
-          <a href="#existing-paper">Existing Paper</a>
-          <a href="#dual-phase">Phase 2 vs Phase 4</a>
-          <a href="#architecture">Architecture</a>
-          <a href="#training">Training Dynamics</a>
+          <a href="#existing-paper">Background</a>
+          <a href="#dual-phase">Phase 2 vs 4</a>
+          <a href="#architectures">4 Model Suites</a>
           <a href="#experiments">Experiments</a>
           <a href="#master-table">Master Results</a>
+          <a href="#reproducibility">Reproduce</a>
+          <a href="#authors">Authors</a>
         </nav>
         <div class="theme-switch" role="group" aria-label="Background tone selector">
           <button type="button" id="btn-cream" class="theme-btn active" onclick="setTheme('cream')">Cream</button>
@@ -568,520 +711,1017 @@
   <main class="container">
     <article class="hero">
       <div class="meta-tag">
-        <span>&bull;</span> Technical Article &amp; Methodology Defense &middot; PES University
+        <span>&bull;</span> Capstone Project Phase-3 (UE23AM441A) &middot; Dept. of CSE (AI&amp;ML), PES University
       </div>
-      <h1>Adaptive Multimodal Routing &amp; Low-Rank Bilinear Fusion for Subject-Independent Autism Screening</h1>
+      <h1><span class="title-gradient">LUMEN</span><span class="title-sub">Lightweight Unified Multimodal Energy-aware Neural Network</span></h1>
+      <p class="hero-tagline">Adaptive multimodal routing, sequential early-exit cascades, and tensor fusion for computationally efficient autism classification.</p>
       <p class="hero-lead">
-        A rigorous investigation into neuromuscular motion biomarkers across 33 clinical participants (989 trials). Resolving the observation-versus-execution paradox, achieving 85.62% out-of-subject accuracy, and reducing dynamic computation by 88.6%.
+        A systematic benchmark of static baselines and three adaptive multimodal deep learning frameworks across 33 clinical participants (989 synchronized EEG, Head IMU, and 3D MoCap trials) under strict 5-fold subject-independent cross-validation.
       </p>
 
       <div class="article-meta">
-        <span><strong>Author:</strong> Akanksh</span>
+        <span><strong>Dataset:</strong> Move4AS (33 Subjects, 989 Trials)</span>
         <span>&bull;</span>
-        <span><strong>Affiliation:</strong> Department of Artificial Intelligence &amp; Machine Learning</span>
+        <span><strong>Protocol:</strong> 5-Fold <code>StratifiedGroupKFold</code> (0 Subject Leakage)</span>
         <span>&bull;</span>
-        <span><strong>Validation Scheme:</strong> Strict 5-Fold StratifiedGroupKFold (Zero Intra-Subject Leakage)</span>
+        <span><strong>Tasks:</strong> Target A (ASD vs. Control) &amp; Target B (3-Class Movement Style)</span>
       </div>
     </article>
 
     <!-- Key Numerical Highlights -->
     <div class="stat-row">
       <div class="stat-box">
-        <div class="stat-num">85.62%</div>
-        <div class="stat-desc">ASD Diagnostic Accuracy (Target A)</div>
+        <div class="stat-num">91.71%</div>
+        <div class="stat-desc">Peak Out-of-Subject ASD Accuracy (Tucker Tensor Fusion, F1: 0.913)</div>
       </div>
       <div class="stat-box">
-        <div class="stat-num">88.6%</div>
-        <div class="stat-desc">Compute Reduction (4.17 MFLOPs)</div>
+        <div class="stat-num">92.5%</div>
+        <div class="stat-desc">Dynamic FLOPs Reduction (2.75 vs. 36.53 MFLOPs Dense)</div>
       </div>
       <div class="stat-box">
         <div class="stat-num">0.88 MB</div>
-        <div class="stat-desc">INT8 Edge Memory Footprint</div>
+        <div class="stat-desc">Post-Training Dynamic INT8 Model Footprint</div>
       </div>
       <div class="stat-box">
-        <div class="stat-num">&plusmn;7.35%</div>
-        <div class="stat-desc">Cross-Fold Stability (Halved Variance)</div>
+        <div class="stat-num">2.34 ms</div>
+        <div class="stat-desc">Lowest CPU Latency via 3-Tier Early-Exit Cascade (2.74&times; Speedup)</div>
       </div>
     </div>
 
     <!-- Article Content -->
     <div class="article-content">
 
-      <!-- SECTION 1: THE EXISTING PAPER -->
+      <!-- SECTION 1: BACKGROUND & COHORT -->
       <section id="existing-paper">
-        <h2>1. The Existing Paper: What Did They Do &amp; What Were Their Results?</h2>
-        
+        <h2>1. Background, Existing Paper &amp; Synchronized Cohort</h2>
+
         <p>
-          In January 2025, researchers at the University of Coimbra (Portugal) published the Move4AS multimodal collection in <em>Scientific Data</em> (Springer Nature):
+          In June 2025, Paulo <em>et al.</em> at the University of Coimbra published the <strong>Move4AS</strong> dataset in <em>Scientific Data</em>, recording synchronized neurophysiological and kinematic streams during gross-motor imitation (dancing and walking across three expressive movement styles).
         </p>
 
         <div class="concept-box">
-          <div class="box-title">📄 Source Reference: Nature Scientific Data (2025)</div>
+          <div class="box-title">Source Dataset Reference: Nature Scientific Data (2025)</div>
           <p>
             <strong>Title:</strong> <em>"A Multimodal Dataset Addressing Motor Function in Autism"</em><br>
-            <strong>Authors:</strong> João Ruivo Paulo, Teresa Sousa, João Perdiz, Lara Pereira, Mariette Vasen, Susana Mouga, Gabriel Pires, Miguel Castelo-Branco.<br>
-            <strong>Citation:</strong> <em>Sci Data</em> 12, 1 (2025). DOI: <a href="https://doi.org/10.1038/s41597-025-05313-0" target="_blank">10.1038/s41597-025-05313-0</a> &middot; Figshare ID: 28296518.
+            <strong>Authors:</strong> J. R. Paulo, T. Sousa, J. Perdiz, L. Pereira, M. Vasen, S. Mouga, G. Pires, and M. Castelo-Branco.<br>
+            <strong>Citation:</strong> <em>Scientific Data</em>, vol. 12, art. 959, Jun. 2025. DOI: <a href="https://doi.org/10.1038/s41597-025-05313-0" target="_blank">10.1038/s41597-025-05313-0</a> &middot; Figshare ID: <code>28296518</code>.
           </p>
         </div>
 
-        <h3>A. What Did the Existing Paper Do?</h3>
-        <p>
-          The authors recorded 34 human participants (20 neurotypical controls, 14 autistic individuals) engaged in imitation tasks. They synchronously recorded three distinct physical modalities:
-        </p>
-        <ol>
-          <li><strong>Scalp EEG:</strong> 14 to 16 wireless electrodes at 250 Hz tracking cortical brainwaves.</li>
-          <li><strong>Head IMU:</strong> 3-axis linear accelerometry ($a_x, a_y, a_z$) embedded in the EEG headset at 250 Hz.</li>
-          <li><strong>3D Optical Motion Capture:</strong> 10 OptiTrack cameras tracking 37 markers across 21 skeletal joints at 50 Hz.</li>
-        </ol>
-
-        <p>
-          However, in their diagnostic prediction section (Table 5 of the Nature publication), the authors implemented a <strong>strictly unimodal, shallow baseline</strong>:
-        </p>
+        <h3>Limitations of the Original Study</h3>
         <ul>
-          <li><strong>Classifier Used:</strong> Common Spatial Pattern feature extraction paired with Linear Discriminant Analysis (<strong>CSP + LDA</strong>).</li>
-          <li><strong>Input Modality Used:</strong> <strong>EEG ONLY</strong>. They completely discarded the 3D Motion Capture and Head IMU data for diagnostic classification.</li>
-          <li><strong>How MoCap &amp; IMU Were Used:</strong> MoCap was used only to report basic descriptive statistics (total joint displacement in meters). IMU was used only as a stationary sanity check (verifying head displacement was minimal: 0.08 m to 0.14 m).</li>
+          <li><strong>Unimodal EEG-Only Classification:</strong> Their technical validation evaluated only a linear <code>CSP + LDA</code> classifier on scalp EEG (reporting 71.4% on dance and 78.0% on walk), discarding both 3D MoCap and Head IMU from classification.</li>
+          <li><strong>Passive Observation Only:</strong> Classification was evaluated exclusively during the 3-second motionless video observation window (Phase 2), never during active motor execution (Phase 4).</li>
+          <li><strong>Pooled Epoch Splitting:</strong> Using a random 80%/20% pooled epoch split allowed trials from the same participant in both train and test splits, overestimating out-of-subject generalization.</li>
         </ul>
 
-        <h3>B. What Were the Existing Paper's Results?</h3>
-        <p>
-          The Nature authors reported the following binary classification accuracies (ASD vs. Neurotypical Control):
-        </p>
+        <h3>Our 33-Participant Synchronized Cohort (<code>multimodal_phase2_phase4_dataset.pt</code>)</h3>
         <ul>
-          <li><strong>Dancing Imitation Task:</strong> <strong>71.4% Accuracy</strong> (using 11 EEG channels, 1–45 Hz).</li>
-          <li><strong>Walking Imitation Task:</strong> <strong>78.0% Accuracy</strong> (using 11 EEG channels, 1–45 Hz).</li>
-        </ul>
-
-        <h3>C. The Fatal Limitations of the Existing Paper</h3>
-        <p>
-          Despite introducing a rich multimodal dataset, the original paper suffered from three critical scientific shortcomings:
-        </p>
-        <ul>
-          <li><strong>Zero Multimodal Fusion:</strong> No integration of brain and body signals. They did not exploit kinematic interaction between cortical intent and joint motion.</li>
-          <li><strong>Evaluated Strictly on Motionless Video Watching:</strong> Their ~74.7% accuracy was obtained solely while participants sat motionless watching animated point-light videos on a computer monitor. They <em>never</em> evaluated classification while participants were actively dancing or walking.</li>
-          <li><strong>Trial Pooling Overfitting:</strong> They partitioned trials via a standard random 80% train / 20% test split pooled across epochs. This allowed trials from the same human subject into both training and test sets, inflating accuracy through intra-subject biometric memorization.</li>
+          <li><strong>Participants &amp; Trials:</strong> <strong>33 adults</strong> (19 Control: <code>S1, S3&ndash;S20</code>; 14 ASD: <code>P1&ndash;P14</code>; <code>S2</code> excluded due to missing MoCap files), yielding <strong>989 synchronized trials</strong> (570 Control [57.6%], 419 ASD [42.4%]).</li>
+          <li><strong>Scalp EEG (<code>(989, 14, 1000)</code>):</strong> 14 common electrodes at 250 Hz, 4th-order zero-phase Butterworth bandpass filtered (0.5&ndash;45.0 Hz) and z-score standardized per channel per trial.</li>
+          <li><strong>Head IMU (<code>(989, 3, 1000)</code>):</strong> 3-axis head linear accelerometry (<em>a<sub>x</sub>, a<sub>y</sub>, a<sub>z</sub></em>) at 250 Hz, axis-standardized per trial.</li>
+          <li><strong>3D MoCap (<code>(989, 280, 3, 21)</code>):</strong> 21 anatomical joints resampled to 70 Hz (280 frames over 4.0 s), pelvis-centered (<code>Hip</code> at origin) and rescaled to cohort-mean bone lengths to eliminate body-size leakage.</li>
         </ul>
       </section>
 
-      <!-- SECTION 2: EXPLAINING PHASE 2 AND PHASE 4 MEANING -->
+      <!-- SECTION 2: PHASE 2 VS PHASE 4 -->
       <section id="dual-phase">
-        <h2>2. Demystifying the Trial Timeline: What Exactly Are Phase 2 and Phase 4?</h2>
+        <h2>2. Dual-Phase Benchmark: Phase 2 (Observation) vs. Phase 4 (Execution)</h2>
 
         <p>
-          To understand our findings, one must understand how each trial in the Move4AS protocol actually proceeds. Every single trial follows a fixed, sequential 4-phase timeline aligned by hardware event trigger codes (<code>stimRegister</code>):
+          Every Move4AS trial follows a hardware-triggered timeline: <strong>Phase 2 (<code>Trigger 2</code>, 3.0 s, 750 samples)</strong> captures motionless passive video observation with relatively clean scalp EEG, whereas <strong>Phase 4 (<code>Trigger 4</code>, 4.0 s, 1,000 samples / 280 MoCap frames)</strong> captures active whole-body imitation where vigorous neck and scalp muscle movement introduces severe electromyographic (EMG) and electrode artifacts into EEG while making 3D skeletal kinematics highly informative.
         </p>
 
-        <!-- Timeline ASCII / Flow -->
-        <div class="formula-card">
-[Trial Timeline]
-Phase 1 (Trigger 1) ──> Phase 2 (Trigger 2) ──> Phase 3 (Trigger 3) ──> Phase 4 (Trigger 4)
-Baseline Fixation      Passive Observation     Auditory Go-Cue         Active Motor Execution
-(Cross on screen)      (Watching video demo)   (High audio beep)       (Imitating Dance/Walk)
-Duration: 1.5 - 2.5s   Duration: 3.0s (750 pts)Duration: 0.5s (125 pts) Duration: 4.0s (1000 pts)
-        </div>
-
-        <div class="concept-box phase">
-          <div class="box-title">🧠 What is Phase 2? (Passive Observation Window)</div>
-          <p>
-            <strong>Trigger Code:</strong> <code>Trigger 2</code> &middot; <strong>Duration:</strong> 3.0 seconds (750 samples @ 250 Hz).<br>
-            <strong>What the participant does:</strong> The participant sits <em>completely motionless</em> on a chair, watching a 3.0-second point-light animation of an avatar demonstrating a dance or walking style on a monitor.<br>
-            <strong>Physiological State:</strong> The participant is not moving any muscle. Scalp EEG captures cortical mirror neuron resonance (mu-rhythm suppression in the 8–13 Hz sensorimotor band). Because the participant is physically stationary, scalp EEG is <strong>pristine and clean</strong> &mdash; completely free of electromyographic (EMG) muscle contraction artifacts. Kinematic sensors (IMU and MoCap) register zero gross displacement.
-          </p>
-        </div>
-
-        <div class="concept-box phase">
-          <div class="box-title">💃 What is Phase 4? (Active Motor Execution Window)</div>
-          <p>
-            <strong>Trigger Code:</strong> <code>Trigger 4</code> &middot; <strong>Duration:</strong> 4.0 seconds (1,000 samples @ 250 Hz for EEG/IMU; 280 frames @ 70 Hz for MoCap).<br>
-            <strong>What the participant does:</strong> After an auditory beep (Phase 3), the participant stands up or physically moves their limbs to <em>actively imitate</em> the dance movement (solo dancing, body shaking, pair dancing) or walking style.<br>
-            <strong>Physiological State:</strong> The whole body is in active motion. 21 skeletal joints are moving in 3D space, and the head is accelerating. However, vigorous movement of the neck, jaw, facial, and scalp muscles creates massive <strong>Electromyographic (EMG) electrical noise</strong>. Furthermore, electrode leads sway, causing mechanical impedance shifts. As a result, <strong>Phase 4 EEG is heavily corrupted by motion artifacts</strong>.
-          </p>
-        </div>
-
-        <h3>The Crucial Revelation: Why the Phase 2 vs. Phase 4 Contrast Explains Everything</h3>
-        <p>
-          This contrast is the foundation of our first scientific discovery:
-        </p>
-        <ul>
-          <li><strong>Why did the Nature paper get ~75% accuracy?</strong> Because they tested exclusively on <strong>Phase 2</strong> (when patients sat motionless). Linear CSP spatial filters could isolate clean mu-rhythms without fighting muscle noise.</li>
-          <li><strong>What happens when you test on Phase 4 active execution?</strong> Classical CSP+LDA <strong>collapses to 58.31%</strong> (barely above chance). Linear spatial filters cannot separate neural activity from violent muscle contraction artifacts.</li>
-          <li><strong>Why is 3D MoCap essential during Phase 4?</strong> While EEG collapses during movement, physical joint kinematics thrives! 3D Motion Capture achieves <strong>86.44% accuracy</strong> during Phase 4, proving that gross motor coordination atypicalities are the genuine physical biomarker of ASD.</li>
-        </ul>
-
-        <div class="figure-block">
-          <div class="figure-img-wrap" onclick="openModal('master_dual_phase_benchmark.png')">
-            <img src="master_dual_phase_benchmark.png" alt="Master Dual-Phase Benchmark">
-            <div class="zoom-badge">&#128269; View High-Res</div>
-          </div>
-          <div class="figure-caption">
-            <strong>Figure 1: Dual-Phase Empirical Benchmark across all 33 Subjects (989 Trials).</strong> In Phase 2 (motionless observation), EEGNet reaches 65.85% on clean neural intent. In Phase 4 (active motor execution), EEGNet degrades to 57.08% due to electromyographic muscle artifacts, while 3D skeletal kinematics demonstrates superior generalization (86.44% Accuracy, 89.2% Sensitivity).
-          </div>
-        </div>
-      </section>
-
-      <!-- SECTION 3: OUR ARCHITECTURE -->
-      <section id="architecture">
-        <h2>3. Our Proposed Architecture: Adaptive Multimodal ASD Screening</h2>
+        <div class="formula-card">[Move4AS Trial Timeline]
+Phase 1 (Trigger 1) ──&gt; Phase 2 (Trigger 2)     ──&gt; Phase 3 (Trigger 3) ──&gt; Phase 4 (Trigger 4)
+Baseline Fixation       Passive Observation         Auditory Go-Cue         Active Motor Execution
+(Cross on screen)       3.0s (750 samples @ 250Hz)  0.5s (125 samples)      4.0s (1000 pts / 280 MoCap frames)</div>
 
         <p>
-          To solve both the computational burden of processing 3 dense sensor streams and the issue of motion-corrupted EEG, we designed an end-to-end adaptive framework.
-        </p>
-
-        <div class="figure-block">
-          <div class="figure-img-wrap" onclick="openModal('adaptive_asd_architecture.png')">
-            <img src="adaptive_asd_architecture.png" alt="Adaptive ASD Architecture Diagram">
-            <div class="zoom-badge">&#128269; View High-Res</div>
-          </div>
-          <div class="figure-caption">
-            <strong>Figure 2: Complete System Architecture.</strong> Three specialized encoders extract modality embeddings $h_{\text{IMU}}, h_{\text{EEG}}, h_{\text{MoCap}} \in \mathbb{R}^{64}$. Modalities are dynamically coordinated by Gumbel-Softmax gating routers or Low-Rank Bilinear Pooling. Dual classification heads simultaneously optimize Target A (ASD diagnosis) and Target B (motor style syntax), with dynamic INT8 quantization for edge microcontroller deployment.
-          </div>
-        </div>
-
-        <h3>A. The Three Modality Encoders</h3>
-        <ul>
-          <li><strong>Tier 1 &mdash; Head IMU Encoder (1D-CNN, ~0.85 MFLOPs):</strong> A 3-block 1D convolutional network with kernel sizes 7, 5, 3 and adaptive average pooling. Extracts high-frequency head tremor, angular acceleration, and micro-postural adjustments.</li>
-          <li><strong>Tier 2 &mdash; Scalp EEG Conformer (~5.20 MFLOPs):</strong> A 4-layer spatial-temporal convolutional network with multi-head self-attention. Features intra-encoder Gumbel-Sigmoid routers that skip redundant layers when signals are uninformative:
-            <div class="formula-card">
-s_l = &sigma;((w_l^T &middot; GAP(h_{l-1}) + G_l) / &tau;)
-h_l = s_l &middot; Block_l(h_{l-1}) + (1 - s_l) &middot; h_{l-1}
-            </div>
-            When $s_l \to 0$, the identity shortcut preserves clean gradient backpropagation ($\partial \mathcal{L} / \partial h_{l-1} = \partial \mathcal{L} / \partial h_l$).
-          </li>
-          <li><strong>Tier 3 &mdash; 3D MoCap ST-GCN Encoder (~14.23 MFLOPs):</strong> Four Spatial-Temporal Graph Convolutional blocks (ST-GCN) tracking 21 rigid skeletal joints connected along natural human anatomical bone edges. Models spatiotemporal kinematic velocity, joint jerk, and coordination dynamics.</li>
-        </ul>
-
-        <h3>B. Dynamic Routing &amp; Gumbel-Softmax Gating</h3>
-        <p>
-          Instead of running all three modalities on every sample, a lightweight gating controller consumes preliminary motion features and computes continuous modality selection weights using Gumbel-Softmax:
-        </p>
-        <div class="formula-card">
-g_m = exp((log(&pi;_m) + G_m) / &tau;) / &sum;_j exp((log(&pi;_j) + G_j) / &tau;),  m &isin; {IMU, EEG, MoCap}
-        </div>
-        <p>
-          Using the Straight-Through Estimator, the network takes hard discrete routing decisions ($g_m \in \{0, 1\}$) during testing, while maintaining differentiable gradients during backpropagation.
-        </p>
-
-        <h3>C. Low-Rank Bilinear Pooling</h3>
-        <p>
-          Linear concatenation ($W_1 h_{\text{EEG}} + W_2 h_{\text{MoCap}}$) fails to capture temporal synchrony between brain intent and joint execution. We project all three feature vectors into a rank-32 subspace and compute multiplicative three-way and pairwise Kronecker interactions:
-        </p>
-        <div class="formula-card">
-z_tri = (W_imu &middot; h_imu) &odot; (W_eeg &middot; h_eeg) &odot; (W_mocap &middot; h_mocap)
-z_fused = &Nu; &middot; [ z_tri || z_imu &odot; z_eeg || z_eeg &odot; z_mocap || z_imu &odot; z_mocap ]
-        </div>
-        <p>
-          This models second-order correlations between cortical motor intent and physical kinematics without parameter explosion.
-        </p>
-
-        <h3>D. Dual-Task Multi-Objective Learning</h3>
-        <p>
-          The network trains with two concurrent objectives:
-        </p>
-        <ul>
-          <li><strong>Target A (Primary Clinical Diagnosis):</strong> Binary classification: Class 0 (Neurotypical Control) vs. Class 1 (Clinical ASD), optimized via Focal Loss ($\gamma = 2.0$) to handle class imbalance.</li>
-          <li><strong>Target B (Auxiliary Movement Style):</strong> 3-class motor syntax (e.g., Solo dance, Body shake, Pair dance), optimized via Cross-Entropy. Target B acts as a semantic regularizer, compelling the latent space to understand physical movement structure rather than overfitting diagnostic noise.</li>
-        </ul>
-      </section>
-
-      <!-- SECTION 4: TRAINING CURVES AND CONVERGENCE -->
-      <section id="training">
-        <h2>4. Training Convergence &amp; Multi-Task Learning Dynamics</h2>
-
-        <p>
-          To verify that the model trains stably without gradient explosion or representation collapse, we recorded loss convergence, Target A accuracy, and Target B auxiliary accuracy across training epochs:
-        </p>
-
-        <div class="figure-block">
-          <div class="figure-img-wrap" onclick="openModal('training_curves_fusion.png')">
-            <img src="training_curves_fusion.png" alt="Bilinear Fusion Training Convergence Curves">
-            <div class="zoom-badge">&#128269; View High-Res</div>
-          </div>
-          <div class="figure-caption">
-            <strong>Figure 3: Bilinear Fusion Multi-Task Training Convergence.</strong> Total multi-objective loss (black curve, left axis) drops smoothly from 1.6 down to &lt;0.2 within 35 epochs. Target A diagnostic accuracy (blue curve, right axis) converges rapidly to &gt;85%, while Target B movement style accuracy (dashed green curve) climbs steadily to ~62%, confirming that motor syntax learning reinforces diagnostic feature extraction.
-          </div>
-        </div>
-
-        <div class="concept-box success">
-          <div class="box-title">📈 Why the Auxiliary Target B Curve Matters</div>
-          <p>
-            Notice how Target A accuracy stabilizes once Target B accuracy surpasses 50%. This empirically proves our hypothesis: <strong>learning the semantic grammar of motor movement regularizes the clinical classification head</strong>. Without Target B, networks easily overfit idiosyncratic biometric artifacts; with Target B, the shared representations are grounded in physical kinematic dynamics.
-          </p>
-        </div>
-      </section>
-
-      <!-- SECTION 5: EXPERIMENTS & RESULTS -->
-      <section id="experiments">
-        <h2>5. Experimental Evaluation &amp; Scientific Findings</h2>
-
-        <p>
-          All experiments were conducted on the complete 33-subject cohort (989 trials) using strict <strong>5-Fold Subject-Independent Cross-Validation (<code>StratifiedGroupKFold</code>)</strong>. Test patients were never seen during training.
-        </p>
-
-        <h3>Experiment 1: The Naive Concatenation Trap &amp; Autonomous Gating</h3>
-        <p>
-          When building multimodal systems, researchers typically concatenate all sensor features. Our benchmark revealed a critical phenomenon:
-        </p>
-        <ul>
-          <li><strong>MoCap Alone:</strong> <strong>86.44% Accuracy</strong> (14.23 MFLOPs).</li>
-          <li><strong>Dense Multimodal (EEG + IMU + MoCap):</strong> <strong>79.46% Accuracy</strong> (36.53 MFLOPs).</li>
-        </ul>
-        <p>
-          <strong>Why is Dense Multimodal nearly 7% worse than MoCap alone?</strong> Because in Phase 4, noisy execution EEG (which has only 57.08% accuracy) corrupts the shared classification head with noisy gradient updates.
-        </p>
-        <p>
-          <strong>How our Adaptive Gated Network solves this:</strong> When trained under an energy penalty ($\lambda_{\text{FLOPs}} = 2.0$), its Gumbel-Softmax routers autonomously discover this noise contamination! The router learns to <strong>completely shut off Phase 4 EEG ($g_{\text{EEG}} \approx 0.0\%$)</strong> while keeping IMU (84.1%) and MoCap (97.9%). Accuracy recovers to <strong>82.33%</strong> while dynamic computation drops by <strong>88.7%</strong> (down to 4.12 MFLOPs)!
-        </p>
-
-        <div class="figure-block">
-          <div class="figure-img-wrap" onclick="openModal('pareto_accuracy_vs_flops.png')">
-            <img src="pareto_accuracy_vs_flops.png" alt="Pareto Trade-off Accuracy vs FLOPs">
-            <div class="zoom-badge">&#128269; View High-Res</div>
-          </div>
-          <div class="figure-caption">
-            <strong>Figure 4: Diagnostic Accuracy vs. Computational Cost (MFLOPs).</strong> Sweeping the compute penalty parameter $\lambda$ traces the empirical Pareto frontier. Our adaptive gated network delivers 82.33% accuracy at just 4.12 MFLOPs, outperforming the 36.53 MFLOPs dense baseline while cutting energy requirements by 88.7%.
-          </div>
-        </div>
-
-        <h3>Experiment 2: Hierarchical Cascade Early-Exit (Tiers 1 &rarr; 2 &rarr; 3)</h3>
-        <p>
-          In our second experiment, we evaluated sequential early exiting: evaluate cheap Head IMU (0.85 MFLOPs); if confidence $\kappa_1 \ge \theta_1$, exit immediately; otherwise activate Scalp EEG (6.05 MFLOPs cumulative); if confidence $\kappa_2 \ge \theta_2$, exit; otherwise invoke 3D MoCap (20.55 MFLOPs).
-        </p>
-
-        <div class="figure-block">
-          <div class="figure-img-wrap" onclick="openModal('cascade_exit_distribution.png')">
-            <img src="cascade_exit_distribution.png" alt="Cascade Exit Distribution">
-            <div class="zoom-badge">&#128269; View High-Res</div>
-          </div>
-          <div class="figure-caption">
-            <strong>Figure 5: Cascade Tier Exit Distributions across Operating Policies.</strong> Under conservative policies, the network safely routes 76.6%–95.5% of unseen patient trials to Tier 3 MoCap, preserving high diagnostic accuracy (72.05%–72.64%) while still achieving 45.6%–53.6% FLOPs reduction.
-          </div>
-        </div>
-
-        <h3>Experiment 3: Multimodal Fusion Ablations &amp; Low-Rank Bilinear Superiority</h3>
-        <p>
-          We benchmarked five distinct multimodal fusion backends under identical 5-fold cross-validation ($\lambda = 1.0$):
+          To quantify this discrepancy under strict 5-fold subject-independent cross-validation (<code>benchmark_phase2_vs_phase4.py</code>, 40 epochs/fold), we evaluated 8 single-task configurations across both phases:
         </p>
 
         <div class="table-container">
           <table>
             <thead>
               <tr>
-                <th>Fusion Mechanism</th>
-                <th>Target A (ASD) Acc</th>
-                <th>Target B (Style) Acc</th>
-                <th>Dynamic Compute</th>
-                <th>Quantized Size</th>
+                <th>Config #</th>
+                <th>Task Phase &amp; Duration</th>
+                <th>Modality &amp; Model</th>
+                <th>Target A Acc (&plusmn; Std)</th>
+                <th>Macro F1</th>
+                <th>Sensitivity (ASD)</th>
+                <th>Specificity (Ctrl)</th>
               </tr>
             </thead>
             <tbody>
+              <tr>
+                <td>1</td>
+                <td>Phase 2 (3.0 s Passive)</td>
+                <td>EEG (<code>PCA + LDA</code>)</td>
+                <td>58.47 &plusmn; 4.95%</td>
+                <td>0.426</td>
+                <td>7.4%</td>
+                <td>95.9%</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Phase 4 (4.0 s Active)</td>
+                <td>EEG (<code>PCA + LDA</code>)</td>
+                <td>58.31 &plusmn; 4.35%</td>
+                <td>0.414</td>
+                <td>6.0%</td>
+                <td>96.7%</td>
+              </tr>
               <tr class="row-highlight">
-                <td><strong>Low-Rank Bilinear (Rank=32)</strong> <span class="tag-top">Top Paper Model</span></td>
-                <td><strong>85.62%</strong></td>
-                <td>62.19%</td>
-                <td><strong>4.17 MFLOPs</strong></td>
-                <td><strong>0.88 MB</strong></td>
+                <td>3</td>
+                <td>Phase 2 (3.0 s Passive)</td>
+                <td>EEG (<code>EEGNet</code>, 750 pts) <span class="tag-top">Best EEG</span></td>
+                <td>61.83 &plusmn; 7.60%</td>
+                <td>0.596</td>
+                <td>47.2%</td>
+                <td>73.6%</td>
               </tr>
               <tr>
-                <td>Hadamard Gating Fusion</td>
-                <td>83.70%</td>
-                <td>60.54%</td>
-                <td>1.94 MFLOPs</td>
-                <td>0.92 MB</td>
+                <td>4</td>
+                <td>Phase 4 (4.0 s Active)</td>
+                <td>EEG (<code>EEGNet</code>, 1000 pts)</td>
+                <td>57.46 &plusmn; 9.87%</td>
+                <td>0.557</td>
+                <td>45.4%</td>
+                <td>66.5%</td>
               </tr>
               <tr>
-                <td>Low-Rank Bilinear Base</td>
-                <td>83.56%</td>
-                <td>59.61%</td>
-                <td>4.21 MFLOPs</td>
-                <td>0.97 MB</td>
+                <td>5</td>
+                <td>Phase 2 (3.0 s Passive)</td>
+                <td>Head IMU (<code>IMU1DCNN</code>)</td>
+                <td>54.00 &plusmn; 3.23%</td>
+                <td>0.500</td>
+                <td>34.4%</td>
+                <td>68.1%</td>
               </tr>
               <tr>
-                <td>Self-Attention Baseline</td>
-                <td>83.04%</td>
-                <td>62.37%</td>
-                <td>3.40 MFLOPs</td>
-                <td>1.04 MB</td>
+                <td>6</td>
+                <td>Phase 4 (4.0 s Active)</td>
+                <td>Head IMU (<code>IMU1DCNN</code>)</td>
+                <td>51.56 &plusmn; 3.12%</td>
+                <td>0.485</td>
+                <td>34.7%</td>
+                <td>62.8%</td>
+              </tr>
+              <tr class="row-highlight">
+                <td>7</td>
+                <td>Phase 4 (4.0 s Active)</td>
+                <td>3D MoCap (<code>MoCapCNN</code>, 21 joints) <span class="tag-top">Top Unimodal</span></td>
+                <td>85.57 &plusmn; 11.35%</td>
+                <td>0.843</td>
+                <td>81.9%</td>
+                <td>87.8%</td>
               </tr>
               <tr>
-                <td>Asymmetric Cross-Attention (EEG Query)</td>
-                <td>82.41%</td>
-                <td><strong>65.40%</strong></td>
-                <td>3.52 MFLOPs</td>
-                <td>0.96 MB</td>
-              </tr>
-              <tr>
-                <td>Tucker Tensor Fusion (Rank=16)</td>
-                <td>81.31%</td>
-                <td>56.94%</td>
-                <td>1.34 MFLOPs</td>
-                <td>0.96 MB</td>
+                <td>8</td>
+                <td>Phase 4 (4.0 s Active)</td>
+                <td>Static Multimodal (EEG + IMU + MoCap)</td>
+                <td>80.79 &plusmn; 10.32%</td>
+                <td>0.796</td>
+                <td>81.3%</td>
+                <td>79.1%</td>
               </tr>
             </tbody>
           </table>
         </div>
 
-        <p>
-          <strong>Why is Bilinear Pooling the champion?</strong> While MoCap alone achieved 86.44%, its cross-fold accuracy had high variance ($\pm$12.59%). Bilinear Fusion achieves <strong>85.62% accuracy while halving cross-fold standard deviation to $\pm$7.35%</strong>. It fuses brain and body signals into a reliable, consistent predictor across all unseen test patients.
-        </p>
-
-        <div class="figure-block">
-          <div class="figure-img-wrap" onclick="openModal('confusion_matrix_fusion.png')">
-            <img src="confusion_matrix_fusion.png" alt="Normalized Clinical Confusion Matrix">
-            <div class="zoom-badge">&#128269; View High-Res</div>
-          </div>
-          <div class="figure-caption">
-            <strong>Figure 6: Clinical Confusion Matrix (Bilinear Fusion).</strong> Proving clinical balance: <strong>84.8% Sensitivity</strong> (true ASD detection recall) and <strong>86.2% Specificity</strong> (true control identification), with 0.850 Macro F1.
-          </div>
+        <div class="concept-box">
+          <div class="box-title">Key Scientific Discovery: The Active Execution Artifact Penalty</div>
+          <p>
+            Deep <code>EEGNet</code> performs <strong>+4.37% better during Phase 2 passive observation (61.83%, F1: 0.596)</strong> than during Phase 4 active execution (57.46%, F1: 0.557). Furthermore, in single-task 40-epoch training, naively concatenating noisy Phase 4 EEG and IMU with 3D MoCap drops accuracy from <strong>85.57%</strong> (MoCap alone) to <strong>80.79%</strong> (Static Multimodal)&mdash;directly motivating adaptive modality gating.
+          </p>
         </div>
 
-        <h3>Experiment 4: INT8 Dynamic Quantization for Microcontroller Deployment</h3>
-        <p>
-          To prove clinical edge feasibility, post-training dynamic INT8 quantization was applied to Linear and Conv1d layers:
-        </p>
-
         <div class="figure-block">
-          <div class="figure-img-wrap" onclick="openModal('quantization_comparison.png')">
-            <img src="quantization_comparison.png" alt="INT8 Quantization Comparison">
-            <div class="zoom-badge">&#128269; View High-Res</div>
+          <div class="figure-img-wrap" onclick="openModal('./phase2_vs_phase4_accuracy_comparison.png')">
+            <img src="./phase2_vs_phase4_accuracy_comparison.png" alt="Dual-Phase Benchmark: Phase 2 vs Phase 4 Accuracy Comparison">
           </div>
           <div class="figure-caption">
-            <strong>Figure 7: Quantization Impact on Model Footprint and CPU Latency.</strong> The Bilinear model compresses to <strong>0.88 MB</strong> with 0.40 ms per-sample inference latency, fitting comfortably within the memory constraints of ARM Cortex-M microcontrollers.
+            <strong>Figure 1: Dual-Phase Benchmark (Phase 2 Passive Observation vs. Phase 4 Active Execution).</strong> Out-of-subject accuracy across all 8 configurations on the 33-participant cohort under 5-fold <code>StratifiedGroupKFold</code>.
           </div>
         </div>
       </section>
 
-      <!-- SECTION 6: MASTER COMPARATIVE TABLE -->
-      <section id="master-table">
-        <h2>6. Master Comparative Benchmark Table</h2>
-        
+      <!-- SECTION 3: FOUR MODEL SUITES & ARCHITECTURES -->
+      <section id="architectures">
+        <h2>3. Four Implemented Model Suites &amp; System Architectures</h2>
+
         <p>
-          Consolidated performance across all baselines and adaptive architectures under strict 5-Fold Subject-Independent Cross-Validation (<code>StratifiedGroupKFold</code>, 33 subjects, 989 trials, 0 subject overlap):
+          Rather than testing a single hypothesis, we designed, implemented, and benchmarked <strong>four modular model suites</strong> under identical 5-fold subject-independent splits, progressing from static baselines to parallel gating, sequential early-exit cascading, and pluggable tensor fusion.
+        </p>
+
+        <h3>Suite 1: Static Unimodal &amp; Dense Multimodal Baselines (<code>baseline/</code>)</h3>
+        <p>
+          Establishes static reference points across <code>EEGNet</code> (17.34 MFLOPs), <code>IMU1DCNN</code> (4.91 MFLOPs), <code>MoCapCNN</code> (14.23 MFLOPs), classical <code>PCA + LDA</code> (0.08 MFLOPs), and <code>DenseMultimodalNet</code> (36.53 MFLOPs, 293.0K params), which runs all three deep encoders on every trial and concatenates their 64-D embeddings into a 192-D &rarr; 128-D dual-head classifier.
+        </p>
+
+        <div class="figure-block">
+          <div class="figure-img-wrap" onclick="openModal('./baseline_architecture.png')">
+            <img src="./baseline_architecture.png" alt="Suite 1 Static Baseline Architecture">
+          </div>
+          <div class="figure-caption">
+            <strong>Figure 2: Suite 1 (<code>baseline/</code>) Architecture.</strong> Unimodal encoders (<code>EEGNet</code>, <code>IMU1DCNN</code>, <code>MoCapCNN</code>) and static concatenation in <code>DenseMultimodalNet</code> (36.53 MFLOPs fixed cost per trial).
+          </div>
+        </div>
+
+        <h3>Suite 2: Parallel Modality &amp; Layer Gating Network (<code>adaptive_model/</code>)</h3>
+        <p>
+          <code>AdaptiveMultimodalASDNet</code> (258.88K params) introduces two-level adaptive routing: (1) a <code>ModalityGatingController</code> driven by the 64-D IMU embedding <em>h</em><sub>IMU</sub> that outputs modality gates [<em>g</em><sub>IMU</sub>, <em>g</em><sub>EEG</sub>, <em>g</em><sub>MoCap</sub>] via temperature-annealed Gumbel-Softmax (&tau;: 2.0 &rarr; 0.5 during training; Sigmoid at evaluation) with inference-time MoCap branch skipping when batch-mean <em>g</em><sub>MoCap</sub> &lt; &tau;<sub>MoCap</sub>; and (2) six internal <code>LayerSkipRouter</code> modules (Gumbel-Sigmoid) gating the residual blocks inside <code>AdaptiveEEGConformer</code> and <code>AdaptiveMoCapSTGCN</code>, coupled with a <code>KinematicAutoencoder</code> and 4-head <code>GatedCrossAttentionFusion</code>.
+        </p>
+
+        <div class="figure-block">
+          <div class="figure-img-wrap" onclick="openModal('./adaptive_model_architecture.png')">
+            <img src="./adaptive_model_architecture.png" alt="Suite 2 Adaptive Multimodal Parallel Gating Architecture">
+          </div>
+          <div class="figure-caption">
+            <strong>Figure 3: Suite 2 (<code>adaptive_model/</code>) Architecture.</strong> <code>AdaptiveMultimodalASDNet</code> featuring IMU-conditioned Gumbel-Softmax modality gating, internal residual <code>LayerSkipRouter</code> blocks, <code>KinematicAutoencoder</code>, and 4-head gated self-attention fusion.
+          </div>
+        </div>
+
+        <h3>Suite 3: Three-Tier Sequential Early-Exit Cascade (<code>adaptive_model_1/</code>)</h3>
+        <p>
+          <code>CascadeMultimodalASDNet</code> (267.29K params) replaces parallel gating with a cost-ordered <strong>3-tier sequential early-exit cascade</strong> trained with multi-tier deep supervision (<code>CascadeEnergyAwareLoss</code>). During inference (<code>forward_cascade_inference</code>), every trial starts at <strong>Tier 1 (IMU Only, 0.85 MFLOPs)</strong>; if softmax confidence &ge; &theta;<sub>1</sub>, it exits immediately. Only uncertain samples are dynamically sliced into a smaller sub-batch for <strong>Tier 2 (IMU + EEG, 6.05 MFLOPs)</strong>; samples meeting confidence &ge; &theta;<sub>2</sub> exit at Tier 2, and only remaining ambiguous trials execute <strong>Tier 3 (MoCap Autoencoder + STGCN + 3-Modality Self-Attention, 20.55 MFLOPs)</strong>.
+        </p>
+
+        <div class="figure-block">
+          <div class="figure-img-wrap" onclick="openModal('./adaptive_model_1_architecture.png')">
+            <img src="./adaptive_model_1_architecture.png" alt="Suite 3 Sequential Early-Exit Cascade Architecture">
+          </div>
+          <div class="figure-caption">
+            <strong>Figure 4: Suite 3 (<code>adaptive_model_1/</code>) Architecture.</strong> <code>CascadeMultimodalASDNet</code> executing per-sample dynamic batch reduction across Tier 1 (IMU), Tier 2 (IMU + EEG), and Tier 3 (Full 3D MoCap + Attention).
+          </div>
+        </div>
+
+        <h3>Suite 4: Pluggable Five-Backend Multimodal Fusion Suite (<code>adaptive_model_2/</code>)</h3>
+        <p>
+          <code>FusionVariantAdaptiveNet</code> holds the adaptive encoders, Gumbel-Softmax modality gates, and <code>AdaptiveEnergyAwareLoss</code> constant while benchmarking five cross-modal fusion operators on the gated 64-D embeddings: (1) <strong>Low-Rank Bilinear Pooling (<em>R</em> = 32)</strong>, (2) <strong>Tucker Tensor Fusion (<em>R</em> = 16, learnable 16&times;16&times;16 core tensor)</strong>, (3) <strong>Hadamard Gating Fusion</strong>, (4) <strong>Asymmetric Cross-Attention (EEG Query &rarr; IMU/MoCap Keys &amp; Values)</strong>, and (5) <strong>Symmetric 3-Token Self-Attention</strong>.
+        </p>
+
+        <div class="figure-block">
+          <div class="figure-img-wrap" onclick="openModal('./adaptive_model_2_architecture.png')">
+            <img src="./adaptive_model_2_architecture.png" alt="Suite 4 Pluggable Multimodal Fusion Suite Architecture">
+          </div>
+          <div class="figure-caption">
+            <strong>Figure 5: Suite 4 (<code>adaptive_model_2/</code>) Architecture.</strong> <code>FusionVariantAdaptiveNet</code> with pluggable cross-modal fusion backends (Bilinear, Tucker Tensor, Hadamard, Asymmetric Cross-Attention, and Self-Attention).
+          </div>
+        </div>
+
+        <h3>Multi-Objective Energy-Aware Training &amp; Convergence</h3>
+        <div class="formula-card">AdaptiveEnergyAwareLoss (Suites 2 &amp; 4):
+  L_total = L_Focal(Target A; alpha=0.6, gamma=2.0) + 0.5 * L_CE(Target B)
+          + 0.1 * L_MSE(MoCap Recon) + lambda_FLOPs * (F_dynamic / 36.5M) + 0.05 * mean(gates)
+
+CascadeEnergyAwareLoss (Suite 3):
+  L_cascade = L_Focal(Tier 1) + L_Focal(Tier 2) + L_Focal(Tier 3)
+            + 0.5 * L_CE(Target B) + 0.1 * L_MSE(MoCap Recon) + 0.05 * (mean(s_EEG) + mean(s_MoCap))</div>
+
+        <div class="figure-block">
+          <div class="figure-img-wrap" onclick="openModal('./training_curves_fusion.png')">
+            <img src="./training_curves_fusion.png" alt="Multi-Task Training Convergence Curves">
+          </div>
+          <div class="figure-caption">
+            <strong>Figure 6: Multi-Task Training Convergence (<code>adaptive_model_2</code>).</strong> Smooth joint minimization of the energy-aware objective alongside Target A (ASD diagnosis) and Target B (3-class movement style) accuracy across epochs.
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 4: ALL EXPERIMENTS & BENCHMARK TABLES -->
+      <section id="experiments">
+        <h2>4. Experimental Evaluation &amp; Benchmark Proof</h2>
+
+        <p>
+          All experiments below were executed on the complete 33-participant cohort (989 synchronized Phase 4 trials) using 5-fold <code>StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42)</code> with zero participant overlap between training and testing folds. FLOPs savings are measured relative to the <strong>36.53 MFLOPs</strong> <code>DenseMultimodalNet</code> baseline.
+        </p>
+
+        <!-- EXPERIMENT 1 -->
+        <h3>Experiment 1: Static Unimodal &amp; Dense Multimodal Baselines (<code>baseline/</code>)</h3>
+        <p>
+          Among standalone modalities, <code>MoCapCNN</code> achieves <strong>81.55% ASD accuracy</strong> (Macro F1: 0.804) at 14.23 MFLOPs, whereas standalone Phase 4 EEG (<code>EEGNet</code>: 56.08%) and Head IMU (<code>IMU1DCNN</code>: 53.70%) remain near the majority-class rate (57.6%). Classical <code>PCA + LDA</code> collapses to 6.0% ASD sensitivity (predicting almost all unseen participants as Control). Static <code>DenseMultimodalNet</code> reaches <strong>85.70%</strong> ASD accuracy (Macro F1: 0.845), but requires <strong>36.53 MFLOPs</strong> per trial.
         </p>
 
         <div class="table-container">
           <table>
             <thead>
               <tr>
-                <th>Model Architecture</th>
-                <th>Modality Stream</th>
-                <th>ASD Acc</th>
-                <th>Macro F1</th>
-                <th>Sensitivity</th>
-                <th>Specificity</th>
+                <th>Baseline Model</th>
+                <th>Input Modality</th>
+                <th>Target A Acc</th>
+                <th>Target A F1</th>
+                <th>Sens (ASD)</th>
+                <th>Spec (Ctrl)</th>
+                <th>Target B Style</th>
+                <th>Target B F1</th>
+                <th>Static MFLOPs</th>
+                <th>Params</th>
+                <th>Latency</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Classical <code>PCA + LDA</code></td>
+                <td>EEG</td>
+                <td>58.42%</td>
+                <td>0.414</td>
+                <td>6.0%</td>
+                <td>96.8%</td>
+                <td>33.36%</td>
+                <td>0.326</td>
+                <td><strong>0.08</strong></td>
+                <td><strong>0.15 K</strong></td>
+                <td><strong>0.12 ms</strong></td>
+              </tr>
+              <tr>
+                <td><code>IMU1DCNN</code></td>
+                <td>Head IMU</td>
+                <td>53.70%</td>
+                <td>0.488</td>
+                <td>29.3%</td>
+                <td>72.4%</td>
+                <td>53.44%</td>
+                <td>0.522</td>
+                <td>4.91</td>
+                <td>44.74 K</td>
+                <td>0.23 ms</td>
+              </tr>
+              <tr>
+                <td><code>EEGNet</code></td>
+                <td>Scalp EEG</td>
+                <td>56.08%</td>
+                <td>0.525</td>
+                <td>39.7%</td>
+                <td>66.4%</td>
+                <td>34.92%</td>
+                <td>0.347</td>
+                <td>17.34</td>
+                <td>37.05 K</td>
+                <td>5.20 ms</td>
+              </tr>
+              <tr>
+                <td><code>MoCapCNN</code></td>
+                <td>3D MoCap (21 joints)</td>
+                <td>81.55%</td>
+                <td>0.804</td>
+                <td>75.4%</td>
+                <td>85.8%</td>
+                <td><strong>54.00%</strong></td>
+                <td>0.515</td>
+                <td>14.23</td>
+                <td>185.6 K</td>
+                <td>0.54 ms</td>
+              </tr>
+              <tr class="row-highlight">
+                <td><code>DenseMultimodalNet</code> <span class="tag-top">Dense Ref</span></td>
+                <td>EEG + IMU + MoCap</td>
+                <td><strong>85.70%</strong></td>
+                <td><strong>0.845</strong></td>
+                <td><strong>79.0%</strong></td>
+                <td><strong>90.3%</strong></td>
+                <td>53.88%</td>
+                <td><strong>0.535</strong></td>
+                <td>36.53</td>
+                <td>293.0 K</td>
+                <td>5.76 ms</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="figure-block">
+          <div class="figure-img-wrap" onclick="openModal('./baseline_accuracy_comparison.png')">
+            <img src="./baseline_accuracy_comparison.png" alt="Baseline 5-Fold Subject-Independent Classification Accuracy">
+          </div>
+          <div class="figure-caption">
+            <strong>Figure 7: Baseline 5-Fold Subject-Independent Accuracy Comparison.</strong> Performance of all five static baselines on Target A (ASD Diagnosis) and Target B (Action Style).
+          </div>
+        </div>
+
+        <div class="figure-block">
+          <div class="figure-img-wrap" onclick="openModal('./confusion_matrices_baselines.png')">
+            <img src="./confusion_matrices_baselines.png" alt="Out-of-Subject Confusion Matrices for DenseMultimodalNet">
+          </div>
+          <div class="figure-caption">
+            <strong>Figure 8: Out-of-Subject Confusion Matrices for <code>DenseMultimodalNet</code>.</strong> Accumulated across all 5 held-out test folds (<em>N</em> = 989 trials: 513/570 Control, 340/419 ASD) on Target A and Target B.
+          </div>
+        </div>
+
+        <!-- EXPERIMENT 2 -->
+        <h3>Experiment 2: Parallel Modality &amp; Layer Gating Pareto Sweep (<code>adaptive_model/</code>)</h3>
+        <p>
+          Sweeping the compute penalty &lambda;<sub>FLOPs</sub> &isin; {0.0, 0.5, 1.0, 2.0} in <code>AdaptiveMultimodalASDNet</code> demonstrates <strong>autonomous pruning of motion-contaminated Phase 4 EEG</strong>: as &lambda;<sub>FLOPs</sub> rises, the learned EEG gate drops from <code>46.8% &rarr; 20.7% &rarr; 3.9% &rarr; 0.0%</code> while MoCap rises from <code>48.8% &rarr; 97.8%</code>. At the Balanced Penalty (&lambda;<sub>FLOPs</sub> = 1.0), accuracy reaches <strong>86.93%</strong> (Macro F1: <strong>0.866</strong>)&mdash;outperforming the 36.53 MFLOPs dense baseline while reducing dynamic compute by <strong>90.0% (3.67 MFLOPs)</strong>.
+        </p>
+
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Compute Policy</th>
+                <th>&lambda;<sub>FLOPs</sub></th>
+                <th>Target A Acc</th>
+                <th>Target A F1</th>
+                <th>Target B Style</th>
+                <th>Target B F1</th>
+                <th>Dyn. MFLOPs</th>
+                <th>FLOPs Saved</th>
+                <th><em>g</em><sub>IMU</sub></th>
+                <th><em>g</em><sub>EEG</sub></th>
+                <th><em>g</em><sub>MoCap</sub></th>
+                <th>Latency</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>No Penalty</td>
+                <td>0.0</td>
+                <td>77.16%</td>
+                <td>0.752</td>
+                <td>57.65%</td>
+                <td>0.559</td>
+                <td>15.98</td>
+                <td>56.3%</td>
+                <td>57.6%</td>
+                <td>46.8%</td>
+                <td>48.8%</td>
+                <td><strong>6.04 ms</strong></td>
+              </tr>
+              <tr>
+                <td>Low Penalty</td>
+                <td>0.5</td>
+                <td>82.50%</td>
+                <td>0.818</td>
+                <td>57.95%</td>
+                <td>0.567</td>
+                <td><strong>3.38</strong></td>
+                <td><strong>90.8%</strong></td>
+                <td>55.8%</td>
+                <td>20.7%</td>
+                <td>73.5%</td>
+                <td>6.28 ms</td>
+              </tr>
+              <tr class="row-highlight">
+                <td>Balanced Penalty <span class="tag-top">Best Gated</span></td>
+                <td>1.0</td>
+                <td><strong>86.93%</strong></td>
+                <td><strong>0.866</strong></td>
+                <td>63.70%</td>
+                <td>0.621</td>
+                <td>3.67</td>
+                <td>90.0%</td>
+                <td>74.7%</td>
+                <td>3.9%</td>
+                <td>90.7%</td>
+                <td>6.46 ms</td>
+              </tr>
+              <tr>
+                <td>Aggressive Penalty</td>
+                <td>2.0</td>
+                <td>79.97%</td>
+                <td>0.795</td>
+                <td><strong>65.54%</strong></td>
+                <td><strong>0.651</strong></td>
+                <td>4.10</td>
+                <td>88.8%</td>
+                <td><strong>83.7%</strong></td>
+                <td><strong>0.0%</strong></td>
+                <td><strong>97.8%</strong></td>
+                <td>6.61 ms</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="figure-block">
+          <div class="figure-img-wrap" onclick="openModal('./modality_gate_activations.png')">
+            <img src="./modality_gate_activations.png" alt="Modality Gate Activation Rates Across Compute Budgets">
+          </div>
+          <div class="figure-caption">
+            <strong>Figure 9: Learned Modality Gate Activations Across Compute Budgets.</strong> The Gumbel-Softmax controller progressively shuts down motion-corrupted Phase 4 EEG (46.8% &rarr; 0.0%) while prioritizing 3D MoCap (up to 97.8%) and Head IMU (up to 83.7%).
+          </div>
+        </div>
+
+        <div class="figure-block">
+          <div class="figure-img-wrap" onclick="openModal('./pareto_accuracy_vs_flops.png')">
+            <img src="./pareto_accuracy_vs_flops.png" alt="Pareto Trade-off Accuracy vs FLOPs">
+          </div>
+          <div class="figure-caption">
+            <strong>Figure 10: Accuracy vs. Computational Cost Pareto Curve (<code>adaptive_model</code>).</strong> Parallel soft gating dominates the static dense baseline by simultaneously raising out-of-subject accuracy and cutting dynamic compute by ~90%.
+          </div>
+        </div>
+
+        <!-- EXPERIMENT 3 -->
+        <h3>Experiment 3: Three-Tier Sequential Early-Exit Cascade (<code>adaptive_model_1/</code>)</h3>
+        <p>
+          Training <code>CascadeMultimodalASDNet</code> once per fold and sweeping five confidence threshold pairs (&theta;<sub>1</sub>, &theta;<sub>2</sub>) at inference delivers <strong>genuine per-sample wall-clock CPU speedup</strong> via dynamic batch tensor slicing: routing 41.2% of trials out at Tiers 1 and 2 under the Ultra-Aggressive policy cuts measured CPU latency by <strong>2.74&times; (6.41 ms &rarr; 2.34 ms/sample)</strong> and compute from 20.55 to 13.73 MFLOPs. However, because standalone IMU and Phase 4 EEG are weak unimodal predictors, cost-ordered early exiting trades diagnostic accuracy (67.25%&ndash;73.27%) compared to parallel gated fusion.
+        </p>
+
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Operating Policy</th>
+                <th>Thresholds (&theta;<sub>1</sub>, &theta;<sub>2</sub>)</th>
+                <th>Target A Acc</th>
+                <th>Target A F1</th>
+                <th>Target B Style</th>
+                <th>Target B F1</th>
+                <th>Dyn. MFLOPs</th>
+                <th>FLOPs Saved</th>
+                <th>Tier 1 (IMU)</th>
+                <th>Tier 2 (EEG)</th>
+                <th>Tier 3 (MoCap)</th>
+                <th>CPU Latency</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Ultra-Aggressive</td>
+                <td>(0.80, 0.85)</td>
+                <td>67.25%</td>
+                <td>0.640</td>
+                <td>48.77%</td>
+                <td>0.475</td>
+                <td><strong>13.73</strong></td>
+                <td><strong>62.4%</strong></td>
+                <td><strong>16.2%</strong></td>
+                <td><strong>25.0%</strong></td>
+                <td>58.8%</td>
+                <td><strong>2.34 ms</strong></td>
+              </tr>
+              <tr>
+                <td>Aggressive</td>
+                <td>(0.90, 0.88)</td>
+                <td>69.49%</td>
+                <td>0.670</td>
+                <td>50.89%</td>
+                <td>0.506</td>
+                <td>16.14</td>
+                <td>55.8%</td>
+                <td>5.3%</td>
+                <td>23.1%</td>
+                <td>71.5%</td>
+                <td>3.78 ms</td>
+              </tr>
+              <tr>
+                <td>Balanced</td>
+                <td>(0.95, 0.90)</td>
+                <td>70.49%</td>
+                <td>0.683</td>
+                <td>52.84%</td>
+                <td>0.528</td>
+                <td>17.10</td>
+                <td>53.2%</td>
+                <td>2.9%</td>
+                <td>19.9%</td>
+                <td>77.2%</td>
+                <td>4.66 ms</td>
+              </tr>
+              <tr>
+                <td>Conservative</td>
+                <td>(0.98, 0.95)</td>
+                <td>72.94%</td>
+                <td>0.710</td>
+                <td>56.28%</td>
+                <td>0.561</td>
+                <td>19.85</td>
+                <td>45.6%</td>
+                <td>0.9%</td>
+                <td>3.6%</td>
+                <td>95.5%</td>
+                <td>5.61 ms</td>
+              </tr>
+              <tr class="row-highlight">
+                <td>Exhaustive (No Exit) <span class="tag-top">Peak Cascade</span></td>
+                <td>(1.01, 1.01)</td>
+                <td><strong>73.27%</strong></td>
+                <td><strong>0.714</strong></td>
+                <td><strong>57.60%</strong></td>
+                <td><strong>0.572</strong></td>
+                <td>20.55</td>
+                <td>43.7%</td>
+                <td>0.0%</td>
+                <td>0.0%</td>
+                <td><strong>100.0%</strong></td>
+                <td>6.41 ms</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="figure-block">
+          <div class="figure-img-wrap" onclick="openModal('./cascade_exit_distribution.png')">
+            <img src="./cascade_exit_distribution.png" alt="Cascade Early-Exit Distribution Across Operating Policies">
+          </div>
+          <div class="figure-caption">
+            <strong>Figure 11: Cascade Tier Exit Distribution Across Operating Policies.</strong> Fraction of test trials exiting at Tier 1 (IMU, ~0.85 MFLOPs), Tier 2 (IMU + EEG, ~6.05 MFLOPs), and Tier 3 (Full MoCap, ~20.55 MFLOPs).
+          </div>
+        </div>
+
+        <!-- EXPERIMENT 4 -->
+        <h3>Experiment 4: Five-Backend Multimodal Fusion Suite &amp; Bilinear Pareto Sweep (<code>adaptive_model_2/</code>)</h3>
+        <p>
+          In Stage 1 (&lambda;<sub>FLOPs</sub> = 1.0, 35 epochs/fold), we benchmarked all five mathematical fusion backends on the same adaptive gated backbone. <strong>Tucker Tensor Fusion (<em>R</em> = 16)</strong> achieves the highest out-of-subject ASD accuracy in the entire study at <strong>91.71%</strong> (Macro F1: <strong>0.913</strong>) at just <strong>2.75 MFLOPs</strong> (92.5% compute reduction). <strong>Hadamard Gating</strong> achieves the lowest neural compute (<strong>2.26 MFLOPs</strong>, 93.8% reduction, 85.14% Acc), <strong>Low-Rank Bilinear Pooling (<em>R</em> = 32)</strong> achieves the highest movement style accuracy (<strong>63.88%</strong>), and <strong>Self-Attention</strong> yields the highest combined dual-task score (<strong>118.16</strong>).
+        </p>
+
+        <h4>Stage 1: Five Fusion Backends Benchmark (&lambda;<sub>FLOPs</sub> = 1.0, 35 Epochs)</h4>
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Fusion Backend (<code>fusion_type</code>)</th>
+                <th>Target A ASD Acc</th>
+                <th>Target A F1</th>
+                <th>Target B Style Acc</th>
+                <th>Target B F1</th>
+                <th>Composite (Acc<sub>A</sub> + 0.5 Acc<sub>B</sub>)</th>
+                <th>Dyn. MFLOPs</th>
+                <th>FLOPs Saved</th>
+                <th>Latency</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Low-Rank Bilinear (<em>R</em> = 32) <span class="tag-top">Best Style</span></td>
+                <td>83.48%</td>
+                <td>0.830</td>
+                <td><strong>63.88%</strong></td>
+                <td><strong>0.632</strong></td>
+                <td>115.42</td>
+                <td>3.96</td>
+                <td>89.2%</td>
+                <td><strong>6.32 ms</strong></td>
+              </tr>
+              <tr class="row-highlight">
+                <td><strong>Tucker Tensor (<em>R</em> = 16)</strong> <span class="tag-top">Champion ASD</span></td>
+                <td><strong>91.71%</strong></td>
+                <td><strong>0.913</strong></td>
+                <td>47.52%</td>
+                <td>0.454</td>
+                <td>115.47</td>
+                <td>2.75</td>
+                <td>92.5%</td>
+                <td>6.50 ms</td>
+              </tr>
+              <tr>
+                <td>Hadamard Gating <span class="tag-top">Lowest FLOPs</span></td>
+                <td>85.14%</td>
+                <td>0.845</td>
+                <td>59.82%</td>
+                <td>0.589</td>
+                <td>115.05</td>
+                <td><strong>2.26</strong></td>
+                <td><strong>93.8%</strong></td>
+                <td>6.68 ms</td>
+              </tr>
+              <tr>
+                <td>Asymmetric Cross-Attention</td>
+                <td>84.61%</td>
+                <td>0.840</td>
+                <td>62.11%</td>
+                <td>0.614</td>
+                <td>115.67</td>
+                <td>3.62</td>
+                <td>90.1%</td>
+                <td>7.34 ms</td>
+              </tr>
+              <tr>
+                <td>Self-Attention Baseline <span class="tag-top">Best Dual-Task</span></td>
+                <td>86.72%</td>
+                <td>0.861</td>
+                <td>62.87%</td>
+                <td>0.625</td>
+                <td><strong>118.16</strong></td>
+                <td>3.31</td>
+                <td>90.9%</td>
+                <td>6.58 ms</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="figure-block">
+          <div class="figure-img-wrap" onclick="openModal('./fusion_variant_comparison.png')">
+            <img src="./fusion_variant_comparison.png" alt="Comparison Across Five Multimodal Fusion Architectures">
+          </div>
+          <div class="figure-caption">
+            <strong>Figure 12: Head-to-Head Comparison of Five Multimodal Fusion Backends.</strong> Subject-independent Target A (ASD) and Target B (Action Style) accuracy at &lambda;<sub>FLOPs</sub> = 1.0.
+          </div>
+        </div>
+
+        <h4>Stage 2: Low-Rank Bilinear Pooling Multi-Budget Pareto Sweep (45 Epochs/Fold)</h4>
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Compute Policy</th>
+                <th>&lambda;<sub>FLOPs</sub></th>
+                <th>Target A Acc</th>
+                <th>Target A F1</th>
+                <th>Target B Style</th>
+                <th>Target B F1</th>
+                <th>Dyn. MFLOPs</th>
+                <th>FLOPs Saved</th>
+                <th><em>g</em><sub>IMU</sub></th>
+                <th><em>g</em><sub>EEG</sub></th>
+                <th><em>g</em><sub>MoCap</sub></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>No Penalty</td>
+                <td>0.0</td>
+                <td>82.00%</td>
+                <td>0.800</td>
+                <td>60.06%</td>
+                <td>0.595</td>
+                <td>14.91</td>
+                <td>59.2%</td>
+                <td>63.2%</td>
+                <td>32.0%</td>
+                <td>60.8%</td>
+              </tr>
+              <tr class="row-highlight">
+                <td>Low Compute Penalty <span class="tag-top">Best Bilinear</span></td>
+                <td>0.5</td>
+                <td><strong>84.39%</strong></td>
+                <td>0.830</td>
+                <td>61.38%</td>
+                <td>0.606</td>
+                <td><strong>3.67</strong></td>
+                <td><strong>90.0%</strong></td>
+                <td>73.0%</td>
+                <td>7.2%</td>
+                <td>79.6%</td>
+              </tr>
+              <tr>
+                <td>Balanced Penalty</td>
+                <td>1.0</td>
+                <td>83.58%</td>
+                <td><strong>0.831</strong></td>
+                <td>61.81%</td>
+                <td>0.613</td>
+                <td>3.93</td>
+                <td>89.3%</td>
+                <td><strong>78.9%</strong></td>
+                <td>2.5%</td>
+                <td>91.7%</td>
+              </tr>
+              <tr>
+                <td>Aggressive Penalty</td>
+                <td>2.0</td>
+                <td>80.15%</td>
+                <td>0.788</td>
+                <td><strong>63.49%</strong></td>
+                <td><strong>0.631</strong></td>
+                <td>3.69</td>
+                <td>89.9%</td>
+                <td>75.2%</td>
+                <td><strong>0.9%</strong></td>
+                <td><strong>95.7%</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="figure-block">
+          <div class="figure-img-wrap" onclick="openModal('./confusion_matrix_fusion.png')">
+            <img src="./confusion_matrix_fusion.png" alt="Diagnostic Confusion Matrices for Low-Rank Bilinear Fusion">
+          </div>
+          <div class="figure-caption">
+            <strong>Figure 13: Representative Held-Out Confusion Matrices (<code>adaptive_model_2</code>).</strong> Single-fold test evaluation (<em>N</em> = 210 held-out trials) for Low-Rank Bilinear Fusion on Target A (ASD Diagnosis) and Target B (Movement Style).
+          </div>
+        </div>
+
+        <!-- EXPERIMENT 5 -->
+        <h3>Experiment 5: Post-Training Dynamic INT8 Quantization Across Adaptive Suites</h3>
+        <p>
+          Applying post-training dynamic INT8 quantization (<code>torch.ao.quantization.quantize_dynamic</code> with the <code>qnnpack</code> ARM64 backend) compresses all three adaptive checkpoints below the <strong>1.0 MB</strong> edge memory threshold (<strong>0.88 MB &ndash; 0.96 MB</strong>, 1.10&times;&ndash;1.13&times; compression). Because dynamic <code>qnnpack</code> on ARM64 quantizes <code>nn.Linear</code> layers while leaving <code>nn.Conv1d/Conv2d</code> in FP32, per-layer activation quantization overhead adds ~1.1&ndash;1.4 ms on small batches (<em>B</em> = 4), motivating static PTQ/QAT for microcontroller latency speedup.
+        </p>
+
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Adaptive Framework Checkpoint</th>
+                <th>FP32 Size</th>
+                <th>INT8 Size</th>
+                <th>Compression</th>
+                <th>FP32 CPU Latency</th>
+                <th>INT8 CPU Latency</th>
+                <th>Speedup Ratio</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Suite 2 (<code>adaptive_model</code>)</td>
+                <td>1.04 MB</td>
+                <td>0.95 MB</td>
+                <td>1.10&times;</td>
+                <td>6.80 ms</td>
+                <td>8.02 ms</td>
+                <td>0.85&times;</td>
+              </tr>
+              <tr>
+                <td>Suite 3 (<code>adaptive_model_1</code>)</td>
+                <td>1.08 MB</td>
+                <td>0.96 MB</td>
+                <td><strong>1.13&times;</strong></td>
+                <td>6.95 ms</td>
+                <td>8.15 ms</td>
+                <td>0.85&times;</td>
+              </tr>
+              <tr class="row-highlight">
+                <td>Suite 4 (<code>adaptive_model_2</code>) <span class="tag-top">Smallest Footprint</span></td>
+                <td><strong>0.97 MB</strong></td>
+                <td><strong>0.88 MB</strong></td>
+                <td>1.10&times;</td>
+                <td><strong>6.68 ms</strong></td>
+                <td>8.12 ms</td>
+                <td>0.82&times;</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="figure-block">
+          <div class="figure-img-wrap" onclick="openModal('./quantization_comparison.png')">
+            <img src="./quantization_comparison.png" alt="Post-Training Dynamic INT8 Quantization Comparison">
+          </div>
+          <div class="figure-caption">
+            <strong>Figure 14: Post-Training Dynamic INT8 Quantization Impact.</strong> Serialized FP32 vs. INT8 memory footprint (sub-1 MB across all three adaptive suites) and CPU inference latency benchmark.
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 5: MASTER COMPARATIVE BENCHMARK TABLE -->
+      <section id="master-table">
+        <h2>5. Master Cross-Suite Comparative Benchmark Table</h2>
+
+        <p>
+          Consolidated 5-fold subject-independent (<code>StratifiedGroupKFold</code>, 33 subjects, 989 trials) comparison across all four model suites:
+        </p>
+
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Suite &amp; Model</th>
+                <th>Paradigm / Modality</th>
+                <th>Target A ASD Acc</th>
+                <th>Target A Macro F1</th>
+                <th>Target B Style Acc</th>
                 <th>MFLOPs</th>
-                <th>Saved %</th>
+                <th>FLOPs Saved</th>
+                <th>CPU Latency</th>
                 <th>INT8 Size</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Nature Baseline (CSP+LDA)</td>
-                <td>Phase 2 Observation EEG</td>
-                <td>58.47%</td>
-                <td>0.426</td>
-                <td>7.4%</td>
-                <td>95.9%</td>
-                <td>0.08 M</td>
-                <td>&mdash;</td>
-                <td>&mdash;</td>
-              </tr>
-              <tr>
-                <td>Nature Baseline (CSP+LDA)</td>
-                <td>Phase 4 Execution EEG</td>
-                <td>58.31%</td>
+                <td>Suite 1: <code>PCA + LDA</code></td>
+                <td>Phase 4 EEG (Linear)</td>
+                <td>58.42%</td>
                 <td>0.414</td>
-                <td>6.0%</td>
-                <td>96.7%</td>
-                <td>0.08 M</td>
-                <td>&mdash;</td>
+                <td>33.36%</td>
+                <td>0.08</td>
+                <td>99.8%</td>
+                <td>0.12 ms</td>
                 <td>&mdash;</td>
               </tr>
               <tr>
-                <td>Deep EEGNet</td>
-                <td>Phase 4 Execution EEG</td>
-                <td>57.08%</td>
-                <td>0.549</td>
-                <td>45.4%</td>
-                <td>65.2%</td>
-                <td>17.34 M</td>
-                <td>&mdash;</td>
-                <td>0.15 MB</td>
-              </tr>
-              <tr>
-                <td>IMU-Only (1D-CNN)</td>
+                <td>Suite 1: <code>IMU1DCNN</code></td>
                 <td>Phase 4 Head IMU</td>
-                <td>51.35%</td>
+                <td>53.70%</td>
                 <td>0.488</td>
-                <td>41.5%</td>
-                <td>57.5%</td>
-                <td>4.91 M</td>
+                <td>53.44%</td>
+                <td>4.91</td>
                 <td>86.6%</td>
-                <td>0.18 MB</td>
+                <td>0.23 ms</td>
+                <td>&mdash;</td>
               </tr>
               <tr>
-                <td>MoCap-Only (3D-CNN)</td>
-                <td>Phase 4 21-Joint Skeleton</td>
-                <td>86.44%</td>
-                <td>0.862</td>
-                <td>89.2%</td>
-                <td>85.6%</td>
-                <td>14.23 M</td>
+                <td>Suite 1: <code>EEGNet</code></td>
+                <td>Phase 4 Scalp EEG</td>
+                <td>56.08%</td>
+                <td>0.525</td>
+                <td>34.92%</td>
+                <td>17.34</td>
+                <td>52.5%</td>
+                <td>5.20 ms</td>
+                <td>&mdash;</td>
+              </tr>
+              <tr>
+                <td>Suite 1: <code>MoCapCNN</code></td>
+                <td>Phase 4 3D MoCap (21 joints)</td>
+                <td>81.55%</td>
+                <td>0.804</td>
+                <td>54.00%</td>
+                <td>14.23</td>
                 <td>61.0%</td>
-                <td>0.74 MB</td>
+                <td>0.54 ms</td>
+                <td>&mdash;</td>
               </tr>
               <tr>
-                <td>Dense Multimodal (All 3)</td>
-                <td>EEG + IMU + MoCap</td>
-                <td>79.46%</td>
-                <td>0.779</td>
-                <td>77.3%</td>
-                <td>80.3%</td>
-                <td>36.53 M</td>
+                <td>Suite 1: <code>DenseMultimodalNet</code></td>
+                <td>Static Concat (All 3)</td>
+                <td>85.70%</td>
+                <td>0.845</td>
+                <td>53.88%</td>
+                <td>36.53</td>
                 <td>0.0% (Ref)</td>
-                <td>1.17 MB</td>
+                <td>5.76 ms</td>
+                <td>&mdash;</td>
               </tr>
-              <tr style="border-top: 2px solid var(--border);">
-                <td>Adaptive Model 1 (&lambda;=2.0)</td>
-                <td>Dynamic Gated Gumbel</td>
-                <td>82.33%</td>
-                <td>0.811</td>
-                <td>81.7%</td>
-                <td>82.8%</td>
-                <td>4.12 M</td>
-                <td>88.7%</td>
+              <tr>
+                <td>Suite 2: <code>AdaptiveMultimodalASDNet</code> (&lambda;=1.0)</td>
+                <td>Parallel Gumbel Gating</td>
+                <td>86.93%</td>
+                <td>0.866</td>
+                <td>63.70%</td>
+                <td>3.67</td>
+                <td>90.0%</td>
+                <td>6.46 ms</td>
                 <td>0.95 MB</td>
               </tr>
               <tr>
-                <td>Adaptive Model 2 (Cascade)</td>
-                <td>Hierarchical Early-Exit</td>
-                <td>72.05%</td>
-                <td>0.708</td>
-                <td>70.1%</td>
-                <td>73.5%</td>
-                <td>19.88 M</td>
-                <td>45.6%</td>
+                <td>Suite 2: <code>AdaptiveMultimodalASDNet</code> (&lambda;=2.0)</td>
+                <td>Parallel Gating (0% EEG) <span class="tag-top">Best Style</span></td>
+                <td>79.97%</td>
+                <td>0.795</td>
+                <td><strong>65.54%</strong></td>
+                <td>4.10</td>
+                <td>88.8%</td>
+                <td>6.61 ms</td>
+                <td>0.95 MB</td>
+              </tr>
+              <tr>
+                <td>Suite 3: <code>CascadeMultimodalASDNet</code> (Ultra-Aggr.)</td>
+                <td>3-Tier Early-Exit <span class="tag-top">Fastest Neural</span></td>
+                <td>67.25%</td>
+                <td>0.640</td>
+                <td>48.77%</td>
+                <td>13.73</td>
+                <td>62.4%</td>
+                <td><strong>2.34 ms</strong></td>
                 <td>0.96 MB</td>
               </tr>
               <tr>
-                <td>Adaptive Model 3 (Hadamard)</td>
-                <td>Gated Multiplicative</td>
-                <td>83.70%</td>
-                <td>0.827</td>
-                <td>82.4%</td>
-                <td>84.7%</td>
-                <td>1.94 M</td>
-                <td>94.7%</td>
-                <td>0.92 MB</td>
+                <td>Suite 3: <code>CascadeMultimodalASDNet</code> (Exhaustive)</td>
+                <td>3-Tier Cascade (100% T3)</td>
+                <td>73.27%</td>
+                <td>0.714</td>
+                <td>57.60%</td>
+                <td>20.55</td>
+                <td>43.7%</td>
+                <td>6.41 ms</td>
+                <td>0.96 MB</td>
+              </tr>
+              <tr>
+                <td>Suite 4: <code>HadamardGatingFusion</code> (&lambda;=1.0)</td>
+                <td>Gated Element-Wise <span class="tag-top">Lowest FLOPs</span></td>
+                <td>85.14%</td>
+                <td>0.845</td>
+                <td>59.82%</td>
+                <td><strong>2.26</strong></td>
+                <td><strong>93.8%</strong></td>
+                <td>6.68 ms</td>
+                <td>0.88 MB</td>
+              </tr>
+              <tr>
+                <td>Suite 4: <code>LowRankBilinearFusion</code> (&lambda;=0.5, 45 ep)</td>
+                <td>Rank-32 Bilinear Pooling</td>
+                <td>84.39%</td>
+                <td>0.830</td>
+                <td>61.38%</td>
+                <td>3.67</td>
+                <td>90.0%</td>
+                <td>6.32 ms</td>
+                <td>0.88 MB</td>
+              </tr>
+              <tr>
+                <td>Suite 4: <code>SelfAttentionFusion</code> (&lambda;=1.0)</td>
+                <td>3-Token Self-Attention <span class="tag-top">Best Dual-Task</span></td>
+                <td>86.72%</td>
+                <td>0.861</td>
+                <td>62.87%</td>
+                <td>3.31</td>
+                <td>90.9%</td>
+                <td>6.58 ms</td>
+                <td>0.88 MB</td>
               </tr>
               <tr class="row-highlight">
-                <td><strong>Adaptive Model 3 (Bilinear)</strong> <span class="tag-top">Champion Model</span></td>
-                <td><strong>Low-Rank Bilinear Pooling</strong></td>
-                <td><strong>85.62%</strong></td>
-                <td><strong>0.850</strong></td>
-                <td><strong>84.8%</strong></td>
-                <td><strong>86.2%</strong></td>
-                <td><strong>4.17 M</strong></td>
-                <td><strong>88.6%</strong></td>
+                <td><strong>Suite 4: <code>TuckerTensorFusion</code> (&lambda;=1.0)</strong> <span class="tag-top">Champion ASD</span></td>
+                <td><strong>Rank-16 3D Tucker Core</strong></td>
+                <td><strong>91.71%</strong></td>
+                <td><strong>0.913</strong></td>
+                <td>47.52%</td>
+                <td>2.75</td>
+                <td>92.5%</td>
+                <td>6.50 ms</td>
                 <td><strong>0.88 MB</strong></td>
               </tr>
             </tbody>
@@ -1089,25 +1729,64 @@ z_fused = &Nu; &middot; [ z_tri || z_imu &odot; z_eeg || z_eeg &odot; z_mocap ||
         </div>
       </section>
 
-      <!-- SECTION 7: TERMINAL RUNNERS -->
-      <section id="terminal-guide">
-        <h2>7. Reproducibility: How to Run Live on Terminal</h2>
+      <!-- SECTION 6: REPRODUCIBILITY -->
+      <section id="reproducibility">
+        <h2>6. Reproducibility: End-to-End Execution Commands</h2>
         <p>
-          Every metric and benchmark table above can be verified live on terminal from the workspace root:
+          All datasets, 5-fold <code>StratifiedGroupKFold</code> benchmarks, INT8 quantization checks, and 300-DPI figures can be reproduced directly from the repository root:
         </p>
 
-        <div class="formula-card">
-# 1. Print Master Benchmark Table:
-python run_all_models.py --benchmark
+        <div class="formula-card"># 1. Extract &amp; synchronize the 33-participant dual-phase dataset (989 trials)
+python extract_phase2_phase4_dataset.py
 
-# 2. Run Live Model Checkpoint Evaluation:
-python run_all_models.py
+# 2. Dual-Phase Benchmark (Phase 2 Passive Observation vs. Phase 4 Active Execution)
+python "correction 2/benchmark_phase2_vs_phase4.py"
 
-# 3. Print the Dual-Phase (Phase 2 vs. Phase 4) Benchmark Table:
-python benchmark_phase2_vs_phase4.py
+# 3. Suite 1: Static Unimodal &amp; Dense Multimodal Baselines
+python baseline/train_baselines.py --data_path "correction 2/data/multimodal_phase2_phase4_dataset.pt" --results_dir "correction 2/baseline/results" --cv_mode group
 
-# 4. Regenerate Publication-Grade Pareto Figures:
-python generate_tradeoff_plots.py
+# 4. Suite 2: Parallel Modality &amp; Layer Gating (4-Budget Pareto Sweep + INT8)
+python adaptive_model/train_adaptive.py --data_path "correction 2/data/multimodal_phase2_phase4_dataset.pt" --results_dir "correction 2/adaptive_model/results" --cv_mode group
+
+# 5. Suite 3: 3-Tier Sequential Early-Exit Cascade (5-Policy Sweep + INT8)
+python adaptive_model_1/train_cascade.py --data_path "correction 2/data/multimodal_phase2_phase4_dataset.pt" --results_dir "correction 2/adaptive_model_1/results" --cv_mode group
+
+# 6. Suite 4: 5-Backend Multimodal Fusion Suite &amp; Bilinear Pareto Sweep + INT8
+python adaptive_model_2/train_fusion.py --data_path "correction 2/data/multimodal_phase2_phase4_dataset.pt" --results_dir "correction 2/adaptive_model_2/results" --cv_mode group</div>
+      </section>
+
+      <!-- SECTION: AUTHORS & MENTOR -->
+      <section id="authors">
+        <h2>Authors &amp; Mentor</h2>
+        <div class="author-grid">
+          <div class="author-card">
+            <div class="author-avatar">AR</div>
+            <div class="author-name">Akanksh Rai</div>
+            <a class="author-mail" href="mailto:akankshrai04@gmail.com">akankshrai04@gmail.com</a>
+          </div>
+          <div class="author-card">
+            <div class="author-avatar">AK</div>
+            <div class="author-name">Aniruddha K S</div>
+            <a class="author-mail" href="mailto:pes1ug23am905@pesu.pes.edu">pes1ug23am905@pesu.pes.edu</a>
+          </div>
+          <div class="author-card">
+            <div class="author-avatar">AB</div>
+            <div class="author-name">Aneesh Bharadwaj K S</div>
+            <a class="author-mail" href="mailto:pes1ug23am047@pesu.pes.edu">pes1ug23am047@pesu.pes.edu</a>
+          </div>
+          <div class="author-card">
+            <div class="author-avatar">SR</div>
+            <div class="author-name">Sanjana Ramesh</div>
+            <a class="author-mail" href="mailto:pes1ug23cs520@pesu.pes.edu">pes1ug23cs520@pesu.pes.edu</a>
+          </div>
+        </div>
+        <div class="mentor-card">
+          <div class="author-avatar mentor">JR</div>
+          <div>
+            <div class="mentor-label">Mentor</div>
+            <div class="author-name">Dr. Jayashree R</div>
+            <a class="author-mail" href="mailto:chairpersonaiml@pesu.pes.edu">chairpersonaiml@pesu.pes.edu</a>
+          </div>
         </div>
       </section>
 
@@ -1123,24 +1802,23 @@ python generate_tradeoff_plots.py
   <footer>
     <div class="container">
       <div class="footer-nav">
-        <a href="#existing-paper">Existing Paper</a>
+        <a href="#existing-paper">Background</a>
         <a href="#dual-phase">Phase 2 vs 4</a>
-        <a href="#architecture">Architecture</a>
-        <a href="#training">Training Dynamics</a>
+        <a href="#architectures">4 Model Suites</a>
         <a href="#experiments">Experiments</a>
-        <a href="#master-table">Master Table</a>
+        <a href="#master-table">Master Results</a>
+        <a href="#reproducibility">Reproduce</a>
       </div>
-      <p>Move4AS-Adaptive-ASD &middot; Department of Artificial Intelligence &amp; Machine Learning, PES University &middot; 2026</p>
+      <p>LUMEN &middot; Department of CSE (AI&amp;ML), PES University &middot; 2026</p>
     </div>
   </footer>
 
   <!-- Interactive JavaScript -->
   <script>
-    // Theme toggle (Single uniform background: Cream-Brown or White)
     function setTheme(theme) {
       const btnCream = document.getElementById('btn-cream');
       const btnWhite = document.getElementById('btn-white');
-      
+
       if (theme === 'white') {
         document.documentElement.style.setProperty('--bg', '#FFFFFF');
         document.documentElement.style.setProperty('--border', '#E5E0D8');
@@ -1165,15 +1843,13 @@ python generate_tradeoff_plots.py
       }
     } catch (e) {}
 
-    // Scroll progress bar
     window.addEventListener('scroll', () => {
       const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
       const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-      const scrolled = (winScroll / height) * 100;
+      const scrolled = height > 0 ? (winScroll / height) * 100 : 0;
       document.getElementById('progress-bar').style.width = scrolled + '%';
     });
 
-    // Lightbox modal functions
     function openModal(imageSrc) {
       const modal = document.getElementById('image-modal');
       const img = document.getElementById('modal-img');
@@ -1188,6 +1864,32 @@ python generate_tradeoff_plots.py
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') closeModal();
     });
+
+    // Simple scroll-reveal animations
+    (function () {
+      if (!('IntersectionObserver' in window)) return;
+      document.documentElement.classList.add('js');
+      const targets = document.querySelectorAll(
+        '.stat-box, .article-content h2, .article-content h3, .article-content p, .table-container, .figure-block, .concept-box, .formula-card, .author-card, .mentor-card'
+      );
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const el = entry.target;
+            el.classList.add('visible');
+            io.unobserve(el);
+            setTimeout(() => { el.style.transitionDelay = ''; }, 1000);
+          }
+        });
+      }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+      targets.forEach((el, i) => {
+        el.classList.add('reveal');
+        if (el.classList.contains('stat-box') || el.classList.contains('author-card')) {
+          el.style.transitionDelay = (i % 4) * 0.08 + 's';
+        }
+        io.observe(el);
+      });
+    })();
   </script>
 </body>
 </html>
